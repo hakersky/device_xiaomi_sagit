@@ -24,16 +24,14 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit XiaomiCustom
 $(call inherit-product, vendor/XiaomiCustom/XiaomiCustom.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
-PRODUCT_NAME := aosp_sagit
+PRODUCT_NAME := potato_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
