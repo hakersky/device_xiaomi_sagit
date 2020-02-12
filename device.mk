@@ -50,8 +50,8 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service
 
 # Lineage hardware
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.sagit
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.sagit
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
